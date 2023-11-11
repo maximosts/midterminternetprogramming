@@ -1,0 +1,18 @@
+/* Carousel css and card css*/
+.carousel-inner {
+    max-width: 600px; /* Adjust the width as needed */
+    margin: auto; /* This centers the carousel if the container is bigger */
+}
+
+.carousel-caption {
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background for text */
+    color: #fff;
+}
+
+.card {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow to cards */
+}
+
+.card-title {
+    color: #007bff;
+}
