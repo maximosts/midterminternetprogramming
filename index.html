@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Your favourite movies</title>
+    <meta name="description" content="Add and manage your favorite courses, movies, sports, etc.">
+    <meta name="keywords" content="courses, movies, sports">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="sticky-top bg-light">
+        <!-- Sticky Header Content -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">Your favourite movies(bale to logo edw)</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main class="container mt-4">
+        <form id="addItemForm">
+            <div class="form-group">
+                <input type="text" class="form-control" id="itemName" placeholder="Item Name">
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control" id="itemCategory" placeholder="Category">
+            </div>
+            <button type="submit" class="btn btn-primary">Add Item</button>
+        </form>
+
+        <table class="table mt-4" id="itemsTable">
+            <thead class="thead-dark">
+                <tr>
+                    <th scope="col" onclick="sortTable(0)">Name</th>
+                    <th scope="col" onclick="sortTable(1)">Category</th>
+                    <th scope="col">Delete</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Items will be added here -->
+            </tbody>
+        </table>
+    </main>
+    <footer class="bg-light text-center text-lg-start">
+        <!-- Footer Content -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+           ADD FOOTER CONTENT HERE
+        </div>
+    </footer>
+    <!-- jQuery, Popper.js, and Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <!-- Custom JS for functionality -->
+    <script src="script.js"></script>
+</body>
+</html>
