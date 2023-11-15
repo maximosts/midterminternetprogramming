@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Your favourite movies</title>
+    <title>Listing Website</title>
     <meta name="description" content="Add and manage your favorite courses, movies, sports, etc.">
     <meta name="keywords" content="courses, movies, sports">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -11,12 +11,17 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="sticky-top bg-light">
+
+    <header class="sticky-top">
         <!-- Sticky Header Content -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="#">Your favourite movies(bale to logo edw)</a>
+        <nav class="navbar navbar-expand-lg">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/PalmtreeLogoDraft-50-PAlex.png" class="img-fluid" alt="Our Sorting Website"> <!--Added some personal logo I created months ago and wrapped the index.html page on it. - Panussis-->
+            </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon">
+                    <img src="images/icons8-double-down-48_EDITEDv1.png" class="center" alt="Menu"> <!--Added a double arrow icon I created to display overt the button for a bit better user experience. - Panussis-->
+                </span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
@@ -30,6 +35,7 @@
             </div>
         </nav>
     </header>
+
     <div class="container mt-5">
         <h1 class="mb-4">Add and Manage Entries</h1>
         <form id="addForm" class="mb-3">
@@ -47,9 +53,11 @@
             </div>
             <button type="submit" class="btn btn-primary">Add</button>
         </form>
+
         <h2>Entries</h2>
+
         <div class="mb-4">
-            <label for="sortCategory" class="form-label">Sort by Category</label>
+            <label for="sortCategory" class="form-label">Filter by Category</label> <!--Minor symantical alteration - Panussis -->
             <select class="form-select" id="sortCategory">
                 <option value="all">All</option>
                 <option value="courses">Courses</option>
@@ -57,12 +65,27 @@
                 <option value="sports">Sports</option>
             </select>
         </div>
+
         <table id="entriesTable" class="table table-bordered table-striped">
             <thead>
                 <tr>
                     <th scope="col">Entry Name</th>
                     <th scope="col">Category</th>
                     <th scope="col">Delete</th>
+                </tr>
+                <tr>
+                    <th scope="col">
+                        <!-- Added Alphabetical sorting option for Entry Names. - Panussis -->
+                        <p>
+                            <button id="btnSortAZEntries" class="btn btn-primary" type="button">Sort Entries A-Z</button>
+                        </p>
+                    </th>
+                    <th scope="col">
+                        <!-- Added Alphabetical sorting option for Categories. - Panussis -->
+                        <p>
+                            <button id="btnSortAZCategories" class="btn btn-primary" type="button">Sort Categories A-Z</button>
+                        </p>
+                    </th>
                 </tr>
             </thead>
             <tbody>
