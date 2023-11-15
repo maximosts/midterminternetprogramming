@@ -18,10 +18,40 @@
     color: #007bff;
 }
 
-/*Changing some attributes (colors, margin, spacing, e.t.c.) of some assets - Panussis */
+/*Changing some attributes (colors, margin, spacing, e.t.c.) of some assets - BEGIN - Panussis */
 
-.body{
+body{
+    background-color: rgba(235, 189, 104, 0.65);
     z-index: -2;
+}
+
+footer {            /*try to push footer to bottom of screen*/
+    position:absolute;
+    bottom:0;
+    width:100%;
+    height:auto;    /* Change to a set height (ex. 60 px) in case of issues */
+    background-color: rgba(236, 148, 66, 0.65);
+    z-index: -1;
+}
+
+h1 {
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+    color:#a6dbd7;
+    margin: 3;
+    padding: 3;
+}
+
+.eyeRestPadding {
+    border-radius: 5px;
+    margin: 20px 20px 20px 20px;
+}
+
+.table {
+    border-color: rgb(50, 87, 75);
+    border: 4px rgb(50, 87, 75);
 }
 
 .center {
@@ -57,3 +87,5 @@
     font-size: large;
     color:#a6dbd7;
 }
+
+/*Changing some attributes (colors, margin, spacing, e.t.c.) of some assets - END - Panussis */
