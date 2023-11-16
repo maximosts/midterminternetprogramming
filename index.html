@@ -13,11 +13,13 @@
 <body>
 
     <header class="sticky-top">
-        <!-- Sticky Header Content -->
+       <!-- Navigation bar with logo and menu items -->
         <nav class="navbar navbar-expand-lg">
+            <!-- Logo with link to home page -->
             <a class="navbar-brand" href="index.html">
                 <img src="images/PalmtreeLogoDraft-50-PAlex.png" class="img-fluid" alt="Our Sorting Website"> <!--Added some personal logo I created months ago and wrapped the index.html page on it. - Panussis-->
             </a>
+            <!-- Hamburger menu for mobile view -->
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon">
                     <img src="images/icons8-double-down-48_EDITEDv1.png" class="center" alt="Menu"> <!--Added a double arrow icon I created to display overt the button for a bit better user experience. - Panussis-->
@@ -26,6 +28,7 @@
             <h1> <!-- The <h1> element's properties handled by CSS for modularity.-->
                 Our Sorting Website
             </h1>
+            <!-- Collapsible menu items -->
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item active">
@@ -40,12 +43,16 @@
     </header>
 
     <div class="container mt-5">
+        <!-- Section for adding new entries -->
         <h2 class="mb-4">Add and Manage Entries</h2>
+        <!-- Form for adding new entries -->
         <form id="addForm" class="mb-3">
+            <!-- Input for entry name -->
             <div class="mb-3">
                 <label for="entryName" class="form-label">Entry Name</label>
                 <input type="text" class="form-control" id="entryName" required>
             </div>
+            <!-- Dropdown for selecting category -->
             <div class="mb-3">
                 <label for="category" class="form-label">Category</label>
                 <select class="form-select" id="category" required>
@@ -54,11 +61,12 @@
                     <option value="sports">Sports</option>
                 </select>
             </div>
+            <!-- Button to submit new entry -->
             <button type="submit" class="btn btn-primary">Add</button>
         </form>
 
         <h2>Entries</h2>
-
+        <!-- Dropdown for filtering entries by category -->
         <div class="mb-4">
             <label for="sortCategory" class="form-label">Filter by Category</label> <!--Minor symantical alteration - Panussis -->
             <select class="form-select" id="sortCategory">
@@ -68,7 +76,7 @@
                 <option value="sports">Sports</option>
             </select>
         </div>
-
+        <!-- Table for displaying entries -->
         <table id="entriesTable" class="table table-bordered table-striped">
             <thead>
                 <tr>
