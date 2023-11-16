@@ -1,6 +1,7 @@
 /* Carousel css and card css*/
+
 .carousel-inner {
-    max-width: 600px; /* Adjust the width as needed */
+    max-width: 300px; /* Adjust the width as needed */
     margin: auto; /* This centers the carousel if the container is bigger */
 }
 
@@ -16,3 +17,81 @@
 .card-title {
     color: #007bff;
 }
+
+/*Changing some attributes (colors, margin, spacing, e.t.c.) of some assets - BEGIN - Panussis */
+
+body{
+    background-color: rgba(235, 189, 104, 0.65);
+    z-index: -2;
+    display: flex;  /*we set this property to"flex" and the one below to "column", to allow the body's contents to be contained and flexibly manipulated according to the shape
+                    and size of the browser window. Good sources: "https://css-tricks.com/snippets/css/a-guide-to-flexbox/" , "https://dev.to/nehalahmadkhan/how-to-make-footer-stick-to-bottom-of-web-page-3i14" */
+    flex-direction: column; /*Lets us decide the direction, or rather axis on which items get rearranged/moved towards. */
+}
+
+footer {            /*try to push footer to bottom of screen*/
+    padding-top: 60px;
+    position:absolute;
+    bottom:0;
+    width:100%;
+    height:auto;    /* Change to a set height (ex. 60 px) in case of issues */
+    background-color: rgba(236, 148, 66, 0.65);
+    z-index: -2;
+}
+
+h1 {
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+    color:#a6dbd7;
+    margin: 3;
+    padding: 3;
+}
+
+.eyeRestPadding {
+    border-radius: 20px;
+    margin: 20px 20px 20px 20px;
+    padding-top: 20px;
+    padding-bottom: auto;
+}
+
+.table {
+    border-color: rgb(50, 87, 75);
+    border: 4px rgb(50, 87, 75);
+}
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+    object-fit: contain;
+}
+  
+.navbar {
+    background-color: rgb(236, 148, 66);
+    z-index: 1;
+}
+
+.navbar-toggler{
+    background-color: rgb(204, 105, 110);
+    color:#fff;
+}
+
+.nav-item {
+    border-radius: 5px;
+    background-color: rgb(204, 105, 110);
+    margin: auto 20px auto 20px;
+}
+
+.nav-link {
+    border-width: 20px;
+    border-color: rgb(50, 87, 75);
+    border-left-width: 20px;
+    border-right-width: 20px;
+    margin-left: 15px;
+    margin-right: 15px;
+    font-size: large;
+    color:#a6dbd7;
+}
+
+/*Changing some attributes (colors, margin, spacing, e.t.c.) of some assets - END - Panussis */
