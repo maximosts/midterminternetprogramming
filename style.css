@@ -30,7 +30,7 @@ body{
 
 footer {            /*try to push footer to bottom of screen*/
     padding-top: 60px;
-    position:absolute;
+    position:relative;
     bottom:0;
     width:100%;
     height:auto;    /* Change to a set height (ex. 60 px) in case of issues */
